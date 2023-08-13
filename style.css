@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+}
+ body {
+    text-align :center; 
+ }
+ h1{
+    padding:30px;
+    font-size: 35px;
+    font-family: serif;
+
+ }
+ button {
+    padding:7px; 
+ }
+ .rBtn {
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+
+ }
+ .moveButtons{
+    display: grid;
+    grid-template-rows: repeat(3 , 50px);
+    grid-template-columns: repeat(3 , 50px);
+    justify-content: center;
+
+ }
+ #up { 
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+ }
+ #down{
+    grid-row-start: 3 ;
+    grid-row-end: 3 ;
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+ }
+ #right { 
+    grid-column-start:-1 ;
+    grid-column-end: -2;
+    grid-row-start:2; 
+    grid-row-end:3; 
+ }
+ #left {
+    grid-row-start:2; 
+    grid-row-end:3; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+ }
+ #score {
+    font-weight: bold;
+    color :orangered ;
+ }
+
+ .theGame{
+    /* display: flex;
+    flex-direction: column; */
+    /* max-width:80rem; */
+
+ }
+ .rules{
+    display: none;
+    list-style: none;
+ }
+ .show {
+    display: block;
+    background-color: gray;
+    color: wheat;
+ }
+ .rules li {
+    font-size: 20px;
+ }
+ .ruleButton{
+    padding: 10px;
+    margin:5px;
+    font-size: 20px;
+ }
+ 
+
+ @media (max-width:640px) {
+    canvas {
+        width:20rem; 
+    }
+    .rules li {
+        font-size: 17px;
+     }
+     .ruleButton{
+        padding: 10px;
+        margin:5px;
+        font-size: 18px;
+     }
+ }
+ @media (max-width:380px) {
+    canvas {
+        width:15rem; 
+    }
+    .rules li {
+        font-size: 14px;
+     }
+     .ruleButton{
+        padding: 10px;
+        margin:5px;
+        font-size: 15px;
+     }
+ }
